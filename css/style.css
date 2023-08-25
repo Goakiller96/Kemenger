@@ -2139,12 +2139,23 @@ textarea {
   flex: 1 1 auto;
   align-self: flex-start;
 }
+@media (max-width: 29.99875em) {
+  .reviews__user {
+    flex-direction: column;
+  }
+}
 .reviews__image {
   margin: 0px 18px 3px 0px;
 }
 .reviews__username {
   font-weight: 600;
   font-size: 1.5rem;
+}
+@media (max-width: 29.99875em) {
+  .reviews__username {
+    text-align: center;
+    margin-bottom: 0.9375rem;
+  }
 }
 @media (min-width: 75em) {
   .reviews__text {
