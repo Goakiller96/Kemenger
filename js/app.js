@@ -3489,7 +3489,6 @@
                     320: {
                         slidesPerView: 1,
                         spaceBetween: 0,
-                        autoHeight: true,
                         slidesPerGroup: 1,
                         spaceBetween: 10
                     },
@@ -3524,7 +3523,6 @@
                     320: {
                         slidesPerView: 1,
                         spaceBetween: 30,
-                        autoHeight: true,
                         slidesPerGroup: 1,
                         spaceBetween: 10
                     },
