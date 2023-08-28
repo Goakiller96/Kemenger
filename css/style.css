@@ -755,6 +755,7 @@ textarea {
 @media (max-width: 47.99875em) {
   .menu__list {
     flex-direction: column;
+    margin-bottom: 3.75rem;
   }
 }
 @media (max-width: 47.99875em) and (min-width: 75em) {
@@ -763,20 +764,20 @@ textarea {
   }
 }
 @media (max-width: 47.99875em) and (min-width: 20em) and (max-width: 75em) {
-  @supports (gap: clamp( 2.5rem , 2.5rem  +  0vw , 2.5rem )) {
+  @supports (gap: clamp( 2.375rem , 2.3295454545rem  +  0.2272727273vw , 2.5rem )) {
     .menu__list {
-      gap: clamp( 2.5rem , 2.5rem  +  0vw , 2.5rem );
+      gap: clamp( 2.375rem , 2.3295454545rem  +  0.2272727273vw , 2.5rem );
     }
   }
-  @supports not (gap: clamp( 2.5rem , 2.5rem  +  0vw , 2.5rem )) {
+  @supports not (gap: clamp( 2.375rem , 2.3295454545rem  +  0.2272727273vw , 2.5rem )) {
     .menu__list {
-      gap: calc(2.5rem + 0 * (100vw - 20rem) / 55);
+      gap: calc(2.375rem + 0.125 * (100vw - 20rem) / 55);
     }
   }
 }
 @media (max-width: 47.99875em) and (max-width: 20em) {
   .menu__list {
-    gap: 2.5rem;
+    gap: 2.375rem;
   }
 }
 .menu__link {
@@ -810,26 +811,31 @@ textarea {
     color: #FAE01A;
   }
 }
+@media (max-width: 47.99875em) {
+  .menu__link {
+    margin-bottom: 3.75rem;
+  }
+}
 @media (max-width: 47.99875em) and (min-width: 75em) {
   .menu__link {
     font-size: 1.5rem;
   }
 }
 @media (max-width: 47.99875em) and (min-width: 20em) and (max-width: 75em) {
-  @supports (font-size: clamp( 1.5rem , 1.5rem  +  0vw , 1.5rem )) {
+  @supports (font-size: clamp( 1.375rem , 1.3295454545rem  +  0.2272727273vw , 1.5rem )) {
     .menu__link {
-      font-size: clamp( 1.5rem , 1.5rem  +  0vw , 1.5rem );
+      font-size: clamp( 1.375rem , 1.3295454545rem  +  0.2272727273vw , 1.5rem );
     }
   }
-  @supports not (font-size: clamp( 1.5rem , 1.5rem  +  0vw , 1.5rem )) {
+  @supports not (font-size: clamp( 1.375rem , 1.3295454545rem  +  0.2272727273vw , 1.5rem )) {
     .menu__link {
-      font-size: calc(1.5rem + 0 * (100vw - 20rem) / 55);
+      font-size: calc(1.375rem + 0.125 * (100vw - 20rem) / 55);
     }
   }
 }
 @media (max-width: 47.99875em) and (max-width: 20em) {
   .menu__link {
-    font-size: 1.5rem;
+    font-size: 1.375rem;
   }
 }
 
@@ -1019,7 +1025,6 @@ textarea {
 @media (max-width: 47.99875em) {
   .footer__menu {
     position: static;
-    margin: 0px 0px 60px 0px;
   }
 }
 .footer__link {
