@@ -1199,8 +1199,18 @@ textarea {
 .info__block-image:nth-child(odd) {
   margin-right: 15px;
 }
+@media (max-width: 47.99875em) {
+  .info__block-image:nth-child(odd) {
+    margin-right: 0px;
+  }
+}
 .info__block-image:nth-child(even) {
   margin-left: 15px;
+}
+@media (max-width: 47.99875em) {
+  .info__block-image:nth-child(even) {
+    margin-left: 0px;
+  }
 }
 .info__block-image1::before {
   content: "";
