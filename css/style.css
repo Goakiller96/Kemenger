@@ -149,7 +149,7 @@ body::after {
   color: #fff;
   font-size: 1.75rem;
   font-weight: 600;
-  right: -100%;
+  right: -90%;
   position: relative;
 }
 
