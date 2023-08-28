@@ -1319,6 +1319,9 @@ textarea {
     margin-bottom: 30px;
   }
 }
+.services__wrapper {
+  text-align: center;
+}
 @media (max-width: 61.99875em) {
   .services__wrapper {
     align-items: center;
