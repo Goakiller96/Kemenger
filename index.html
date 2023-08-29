@@ -6,11 +6,11 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230828174626">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230829124111">
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;500;600;700&display=swap&_v=20230828174626" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;500;600;700&display=swap&_v=20230829124111" rel="stylesheet">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -46,10 +46,10 @@
 							</nav>
 						</div>
 						<div class="header__contacts">
-							<div class="header__contacts-icon">
-								<picture><source srcset="img/phone.webp" type="image/webp"><img src="img/phone.png" alt=""></picture>
-							</div>
-							<a href="tel:87711459826" class="header__phone">8 (771) 145-98-26</a>
+							<!-- <div class="header__contacts-icon">
+						<picture><source srcset="img/phone.webp" type="image/webp"><img src="img/phone.png" alt=""></picture>
+					</div> -->
+							<a href="tel:87711459826" class="header__phone _icon-phone">8 (771) 145-98-26</a>
 						</div>
 						<button type="button" class="menu__icon icon-menu">
 							<span></span>
@@ -271,8 +271,8 @@
 						<!-- Если нужна пагинация -->
 						<div class="swiper-pagination"></div>
 						<!-- Если нужна навигация (влево/вправо) -->
-						<button type="button" class="catalog__slider-controls swiper-button-prev"></button>
-						<button type="button" class="catalog__slider-controls swiper-button-next"></button>
+						<button type="button" class="catalog__slider-controls swiper-button-prev _icon-arrow"></button>
+						<button type="button" class="catalog__slider-controls swiper-button-next _icon-arrow"></button>
 					</div>
 				</div>
 			</section>
@@ -385,8 +385,8 @@
 						</div>
 						<!-- Если нужна пагинация -->
 						<div class="swiper-pagination"></div>
-						<button type="button" class="reviews__slider-arrows swiper-button-prev"></button>
-						<button type="button" class="reviews__slider-arrows swiper-button-next"></button>
+						<button type="button" class="reviews__slider-arrows swiper-button-prev _icon-arrow"></button>
+						<button type="button" class="reviews__slider-arrows swiper-button-next _icon-arrow"></button>
 					</div>
 				</div>
 			</section>
@@ -617,8 +617,7 @@
 	<div id="popupbtn" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content application__content">
-				<button data-close type="button" class="popup__close">&#9747</button>npm run dev
-
+				<button data-close type="button" class="popup__close close-popup">&#9747</button>
 				<div class="popup__text">
 					<div class="application__text">Заполните <span>форму</span> и мы обязательно свяжемся с Вами.</div>
 					<form action="">
@@ -649,7 +648,7 @@
 		</div>
 	</div>
 
-	<script src="js/app.min.js?_v=20230828174626"></script>
+	<script src="js/app.min.js?_v=20230829124111"></script>
 </body>
 
 </html>
