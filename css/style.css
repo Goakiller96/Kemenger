@@ -2519,6 +2519,7 @@ textarea {
 .contacts__info::before {
   content: "";
   position: absolute;
+  background-image: url(../img/contacts-decor1.png);
   background-repeat: no-repeat;
   top: -43px;
   left: 32px;
@@ -2638,27 +2639,23 @@ textarea {
 .contacts__map::before {
   content: "";
   position: absolute;
+  background-image: url(../img/info-decor1.png);
   background-repeat: no-repeat;
-  top: 83px;
+  top: 58px;
   left: -84px;
   width: 200px;
   height: 200px;
-  background-color: #FFF7BE;
-  border: 25px solid #FAE01A;
-  border-radius: 50%;
   z-index: -1;
 }
 .contacts__map::after {
   content: "";
   position: absolute;
+  background-image: url(../img/info-decor2.png);
   background-repeat: no-repeat;
-  bottom: 44px;
+  bottom: 40px;
   right: -83px;
-  width: 200px;
+  width: 201px;
   height: 200px;
-  background-color: #018FA3;
-  border: 25px solid #95D8E0;
-  border-radius: 50%;
   z-index: -1;
 }
 .swiper {
