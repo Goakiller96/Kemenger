@@ -3746,19 +3746,28 @@
                 breakpoints: {
                     320: {
                         slidesPerView: 1,
-                        spaceBetween: 0,
                         slidesPerGroup: 1,
-                        spaceBetween: 10
+                        spaceBetween: 20
+                    },
+                    425: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                        slidesPerGroup: 1
+                    },
+                    575: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                        slidesPerGroup: 2
                     },
                     768: {
                         slidesPerView: 2,
                         spaceBetween: 20,
-                        slidesPerGroup: 2,
-                        spaceBetween: 10
+                        slidesPerGroup: 2
                     },
                     992: {
                         slidesPerView: 3,
-                        spaceBetween: 20
+                        spaceBetween: 20,
+                        slidesPerGroup: 3
                     }
                 },
                 on: {}
@@ -3911,6 +3920,15 @@
     };
     const da = new DynamicAdapt("max");
     da.init();
+    const appBtn = document.querySelector(".application__button");
+    const secPopup = document.querySelector(".secondpopup");
+    const closePopup = document.querySelector(".secondpopup__close");
+    appBtn.onclick = function() {
+        secPopup.classList.add("secondpopup-active");
+    };
+    closePopup.onclick = function() {
+        secPopup.classList.remove("secondpopup-active");
+    };
     window["FLS"] = true;
     isWebp();
     menuInit();
