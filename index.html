@@ -1,90 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-	<title>Kemenger</title>
-	<meta charset="UTF-8">
-	<meta name="format-detection" content="telephone=no">
-	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230831153919">
-	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;500;600;700&display=swap&_v=20230831153919" rel="stylesheet">
-	<!-- <meta name="robots" content="noindex, nofollow"> -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+@@include('html/_head.htm',{
+"title":"Kemenger"
+})
 
 <body>
 	<div class="wrapper">
-		<header class="header">
-			<div class="header__wrapper">
-				<div class="header__container _container">
-					<div class="header__body">
-						<a href="#" class="header__logo logo">
-							<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="logo"></picture>
-						</a>
-						<div class="header__menu menu">
-							<nav class="menu__body">
-								<ul class="menu__list">
-									<li class="menu__item">
-										<a href="#" class="menu__link">О нас</a>
-									</li>
-									<li class="menu__item">
-										<a href="#" class="menu__link">Каталог</a>
-									</li>
-									<li class="menu__item">
-										<a href="#" class="menu__link">Сертификаты</a>
-									</li>
-									<li class="menu__item">
-										<a href="#" class="menu__link">Отзывы</a>
-									</li>
-									<li class="menu__item">
-										<a href="#" class="menu__link">Контакты</a>
-									</li>
-								</ul>
-							</nav>
-						</div>
-						<div class="header__contacts">
-							<!-- <div class="header__contacts-icon">
-						<picture><source srcset="img/phone.webp" type="image/webp"><img src="img/phone.png" alt=""></picture>
-					</div> -->
-							<a href="tel:87711459826" class="header__phone _icon-phone">8 (771) 145-98-26</a>
-						</div>
-						<button type="button" class="menu__icon icon-menu">
-							<span></span>
-							<span></span>
-							<span></span>
-						</button>
-					</div>
-					<div class="header__content">
-						<div class="header__title"><span>KEMENGER MEKTEBI</span> - центр
-							интеллектуального развития</div>
-						<div class="header__text">Обучение происходит на казахском и русском языках. При записи на два или более
-							курсов предусмотрена скидка. Запишитесь на бесплатный пробный урок.</div>
-						<button data-popup="#popupbtn" class="header__button">Оставить заявку</button>
-					</div>
-					<div class="secondpopup">
-						<div class="secondpopup__wrapper">
-							<div class="secondpopup__content">
-								<button data-close type="button" class="secondpopup__close">&#9747</button>
-								<div class="secondpopup__body">
-									<div class="secondpopup__image">
-										<picture><source srcset="img/final.webp" type="image/webp"><img src="img/final.png" alt=""></picture>
-									</div>
-									<div class="secondpopup__text"><span>Спасибо</span> за заявку</div>
-									<div class="secondpopup__text">В ближайшее время мы <span>свяжемся</span> с Вами</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="header__boy -ibg">
-					<picture><source srcset="img/boy1.webp" type="image/webp"><img src="img/boy1.png" alt=""></picture>
-				</div>
-
-			</div>
-		</header>
+		@@include('html/_header.htm',{})
 		<main class="page">
 			<section class="info">
 				<div class="info__container _container">
@@ -96,12 +18,12 @@
 								способности
 								чтобы они могли познавать мир и делать его более красивым и добрым. </div>
 							<div class="info__block-image info__block-image1">
-								<picture><source srcset="img/info1.webp" type="image/webp"><img src="img/info1.jpg" alt=""></picture>
+								<img src="img/info1.jpg" alt="">
 							</div>
 						</div>
 						<div class="info__block block__two">
 							<div class="info__block-image info__block-image2">
-								<picture><source srcset="img/info2.webp" type="image/webp"><img src="img/info2.jpg" alt=""></picture>
+								<img src="img/info2.jpg" alt="">
 							</div>
 							<div class="info__block-text info__text-2">Наши ученики показывают результат уже с первого
 								месяца работы, мы
@@ -116,42 +38,42 @@
 			<section class="services">
 				<div class="services__container _container">
 					<div class="services__image">
-						<picture><source srcset="img/services/services-img.webp" type="image/webp"><img src="img/services/services-img.png" alt=""></picture>
+						<img src="img/services/services-img.png" alt="">
 					</div>
 					<div class="services__text">Мы развиваем детей с 5 до 16 лет
 						по следующим направлениям</div>
 
 					<div class="services__wrapper">
 						<div class="services__decor services__decor-1">
-							<picture><source srcset="img/services/decor-1.webp" type="image/webp"><img src="img/services/decor-1.png" alt=""></picture>
+							<img src="img/services/decor-1.png" alt="">
 							<div class="services__decor-text">Каллиграфия</div>
 						</div>
 						<div class="services__decor services__decor-2">
-							<picture><source srcset="img/services/decor-2.webp" type="image/webp"><img src="img/services/decor-2.png" alt=""></picture>
+							<img src="img/services/decor-2.png" alt="">
 							<div class="services__decor-text">Английский
 								язык</div>
 						</div>
 						<div class="services__decor services__decor-3">
-							<picture><source srcset="img/services/decor-3.webp" type="image/webp"><img src="img/services/decor-3.png" alt=""></picture>
+							<img src="img/services/decor-3.png" alt="">
 							<div class="services__decor-text">Супер
 								память </div>
 						</div>
 						<div class="services__decor services__decor-4">
-							<picture><source srcset="img/services/decor-4.webp" type="image/webp"><img src="img/services/decor-4.png" alt=""></picture>
+							<img src="img/services/decor-4.png" alt="">
 							<div class="services__decor-text">Группа
 								продленного дня </div>
 						</div>
 						<div class="services__decor services__decor-5">
-							<picture><source srcset="img/services/decor-5.webp" type="image/webp"><img src="img/services/decor-5.png" alt=""></picture>
+							<img src="img/services/decor-5.png" alt="">
 							<div class="services__decor-text">Подготовка
 								к школе</div>
 						</div>
 						<div class="services__decor services__decor-6">
-							<picture><source srcset="img/services/decor-6.webp" type="image/webp"><img src="img/services/decor-6.png" alt=""></picture>
+							<img src="img/services/decor-6.png" alt="">
 							<div class="services__decor-text">Скорочтение</div>
 						</div>
 						<div class="services__decor services__decor-7">
-							<picture><source srcset="img/services/decor-7.webp" type="image/webp"><img src="img/services/decor-7.png" alt=""></picture>
+							<img src="img/services/decor-7.png" alt="">
 							<div class="services__decor-text">Ментальная
 								арифметика</div>
 						</div>
@@ -296,16 +218,16 @@
 					<h2 class="sertificates__title title">Наши сертификаты</h2>
 					<div class="sertificates__wrapper">
 						<div class="sertificates__image">
-							<picture><source srcset="img/sertif-1.webp" type="image/webp"><img src="img/sertif-1.jpg" alt=""></picture>
+							<img src="img/sertif-1.jpg" alt="">
 						</div>
 						<div class="sertificates__image">
-							<picture><source srcset="img/sertif-2.webp" type="image/webp"><img src="img/sertif-2.jpg" alt=""></picture>
+							<img src="img/sertif-2.jpg" alt="">
 						</div>
 						<div class="sertificates__image">
-							<picture><source srcset="img/sertif-1.webp" type="image/webp"><img src="img/sertif-1.jpg" alt=""></picture>
+							<img src="img/sertif-1.jpg" alt="">
 						</div>
 						<div class="sertificates__image">
-							<picture><source srcset="img/sertif-2.webp" type="image/webp"><img src="img/sertif-2.jpg" alt=""></picture>
+							<img src="img/sertif-2.jpg" alt="">
 						</div>
 					</div>
 				</div>
@@ -322,7 +244,7 @@
 								<div class="reviews__card">
 									<div class="reviews__user">
 										<div class="reviews__image">
-											<picture><source srcset="img/user1.webp" type="image/webp"><img src="img/user1.png" alt=""></picture>
+											<img src="img/user1.png" alt="">
 										</div>
 										<div class="reviews__username">Malika Fazlieva </div>
 									</div>
@@ -335,7 +257,7 @@
 								<div class="reviews__card">
 									<div class="reviews__user">
 										<div class="reviews__image">
-											<picture><source srcset="img/user2.webp" type="image/webp"><img src="img/user2.png" alt=""></picture>
+											<img src="img/user2.png" alt="">
 										</div>
 										<div class="reviews__username">Aigul Lepessova</div>
 									</div>
@@ -348,7 +270,7 @@
 								<div class="reviews__card">
 									<div class="reviews__user">
 										<div class="reviews__image">
-											<picture><source srcset="img/user3.webp" type="image/webp"><img src="img/user3.png" alt=""></picture>
+											<img src="img/user3.png" alt="">
 										</div>
 										<div class="reviews__username">Malika Fazlieva </div>
 									</div>
@@ -361,7 +283,7 @@
 								<div class="reviews__card">
 									<div class="reviews__user">
 										<div class="reviews__image">
-											<picture><source srcset="img/user4.webp" type="image/webp"><img src="img/user4.png" alt=""></picture>
+											<img src="img/user4.png" alt="">
 										</div>
 										<div class="reviews__username">Анара Баймаганбетова</div>
 									</div>
@@ -374,7 +296,7 @@
 								<div class="reviews__card">
 									<div class="reviews__user">
 										<div class="reviews__image">
-											<picture><source srcset="img/user5.webp" type="image/webp"><img src="img/user5.png" alt=""></picture>
+											<img src="img/user5.png" alt="">
 										</div>
 										<div class="reviews__username">Gulzhan Kossantayeva</div>
 									</div>
@@ -387,7 +309,7 @@
 								<div class="reviews__card">
 									<div class="reviews__user">
 										<div class="reviews__image">
-											<picture><source srcset="img/user6.webp" type="image/webp"><img src="img/user6.png" alt=""></picture>
+											<img src="img/user6.png" alt="">
 										</div>
 										<div class="reviews__username">Енлик Серик</div>
 									</div>
@@ -431,254 +353,23 @@
 							</div>
 						</div>
 						<div class="contacts__image">
-							<picture><source srcset="img/contacts1.webp" type="image/webp"><img src="img/contacts1.png" alt=""></picture>
+							<img src="img/contacts1.png" alt="">
 						</div>
 					</div>
 					<div class="contacts__map">
-						<iframe <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1770.7519939979354!2d71.4750914997133!3d51.12282250953574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x424583ee273f7dbb%3A0x7828e22a15e97b3b!2z0YPQuy4g0JrQsNGB0YvQvNCwINCQ0LzQsNC90LbQvtC70L7QstCwIDI4LCDQkNGB0YLQsNC90LAgMDIwMDAwLCDQmtCw0LfQsNGF0YHRgtCw0L0!5e0!3m2!1sru!2sru!4v1692879378962!5m2!1sru!2sru" width="754" height="499" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						<iframe <iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1770.7519939979354!2d71.4750914997133!3d51.12282250953574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x424583ee273f7dbb%3A0x7828e22a15e97b3b!2z0YPQuy4g0JrQsNGB0YvQvNCwINCQ0LzQsNC90LbQvtC70L7QstCwIDI4LCDQkNGB0YLQsNC90LAgMDIwMDAwLCDQmtCw0LfQsNGF0YHRgtCw0L0!5e0!3m2!1sru!2sru!4v1692879378962!5m2!1sru!2sru"
+							width="754" height="499" style="border:0;" allowfullscreen="" loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"></iframe>
 					</div>
 				</div>
 			</section>
 	</div>
 	</main>
-	<footer class="footer">
-		<div class="footer__container _container">
-			<div class="footer__wrapper">
-				<a href="#" class="footer__logo">
-					<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="logo"></picture>
-				</a>
-				<div class="footer__menu menu">
-					<nav class="menu">
-						<ul class="menu__list menu__list-footer">
-							<li class="menu__item">
-								<a href="#" class="menu__link footer__link">О нас</a>
-							</li>
-							<li class="menu__item">
-								<a href="#" class="menu__link footer__link">Каталог</a>
-							</li>
-							<li class="menu__item">
-								<a href="#" class="menu__link footer__link">Сертификаты</a>
-							</li>
-							<li class="menu__item">
-								<a href="#" class="menu__link footer__link">Отзывы</a>
-							</li>
-							<li class="menu__item">
-								<a href="#" class="menu__link footer__link">Контакты</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-				<div class="footer__logo-2">
-					<picture><source srcset="img/footer-logo.webp" type="image/webp"><img src="img/footer-logo.png" alt=""></picture>
-				</div>
-			</div>
-		</div>
-	</footer>
+	@@include('html/_footer.htm',{})
 	</div>
-	<div id="popup1" aria-hidden="true" class="popup">
-		<div class="popup__wrapper">
-			<div class="popup__content catalog__content">
-				<button data-close type="button" class="popup__close">&#9747</button>
-				<div class="popup__text">
-					<div class="catalog__card">
-						<div class="catalog__card-top card-blue">Подготовка к школе</div>
-						<div class="catalog__card-price">30 000 тг</div>
-						<div class="catalog__card-content">
-							<div class="catalog__card-info">
-								<div class="catalog__card-text">4-6 лет</div>
-								<div class="catalog__card-text">3 занятия в неделю по 3 ч.</div>
-							</div>
-							<ul class="catalog__list">
-								<li class="catalog__item">Обучение чтению </li>
-								<li class="catalog__item">Письмо</li>
-								<li class="catalog__item">Математика</li>
-								<li class="catalog__item">Английский язык</li>
-								<li class="catalog__item">Развитие речи</li>
-								<li class="catalog__item">Концентрация внимания</li>
-								<li class="catalog__item">Усвоение изучаемого материала</li>
-								<li class="catalog__item">Различные техники запоминания</li>
-								<li class="catalog__item">Развитие логико-математического мышления</li>
-							</ul>
-						</div>
-						<button class="catalog__button card-blue">Выбрать</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="popup2" aria-hidden="true" class="popup">
-		<div class="popup__wrapper">
-			<div class="popup__content catalog__content">
-				<button data-close type="button" class="popup__close">&#9747</button>
-				<div class="popup__text">
-					<div class="catalog__card">
-						<div class="catalog__card-top card-violet">Подготовка к школе</div>
-						<div class="catalog__card-price">27 000 тг</div>
-						<div class="catalog__card-content">
-							<div class="catalog__card-info">
-								<div class="catalog__card-text">6-15 лет</div>
-								<div class="catalog__card-text">3 занятия в неделю по 1 ч.</div>
-							</div>
-							<ul class="catalog__list">
-								<li class="catalog__item">Увеличение скорости чтения</li>
-								<li class="catalog__item">Артикуляция</li>
-								<li class="catalog__item">Развитие речи</li>
-								<li class="catalog__item">Увеличение поля зрения</li>
-								<li class="catalog__item">Развитие внимания</li>
-								<li class="catalog__item">Увеличение словарного запаса</li>
-								<li class="catalog__item">Понимание прочитанного</li>
-								<li class="catalog__item">Пересказ</li>
-								<li class="catalog__item">Различные техники понимания</li>
-								<li class="catalog__item">Пробный урок и диагностика БЕСПЛАТНО</li>
-							</ul>
-						</div>
-						<button class="catalog__button card-violet">Выбрать</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="popup3" aria-hidden="true" class="popup">
-		<div class="popup__wrapper">
-			<div class="popup__content catalog__content">
-				<button data-close type="button" class="popup__close">&#9747</button>
-				<div class="popup__text">
-					<div class="catalog__card">
-						<div class="catalog__card-top card-green">ментальная арифметика</div>
-						<div class="catalog__card-price">20 000 тг</div>
-						<div class="catalog__card-content">
-							<div class="catalog__card-info">
-								<div class="catalog__card-text">2 занятия в неделю по 1 ч.</div>
-							</div>
-							<ul class="catalog__list">
-								<li class="catalog__item">Быстрый счет</li>
-								<li class="catalog__item">Развитие высокой концентрации</li>
-								<li class="catalog__item">Увеличесние поля зрения</li>
-								<li class="catalog__item">Фотографическая память</li>
-								<li class="catalog__item">Пробный урок БЕСПЛАТНО</li>
-								<li class="catalog__item">Обучающая платформа в ПОДАРОК</li>
-							</ul>
-						</div>
-						<button class="catalog__button card-green">Выбрать</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="popup4" aria-hidden="true" class="popup">
-		<div class="popup__wrapper">
-			<div class="popup__content catalog__content">
-				<button data-close type="button" class="popup__close">&#9747</button>
-				<div class="popup__text">
-					<div class="catalog__card">
-						<div class="catalog__card-top card-yellow">Каллиграфия</div>
-						<div class="catalog__card-price">24 000 тг</div>
-						<div class="catalog__card-content">
-							<div class="catalog__card-info">
-								<div class="catalog__card-text">3 занятия в неделю по 1 ч.</div>
-							</div>
-							<ul class="catalog__list">
-								<li class="catalog__item">Развитие памяти</li>
-								<li class="catalog__item">Восприятие пространства</li>
-								<li class="catalog__item">Прокачивание мелкой моторики</li>
-								<li class="catalog__item">Основы грамотного письма</li>
-								<li class="catalog__item">Развитие физической выносливости и усидчивости</li>
-								<li class="catalog__item">Умение писать диктанты без графических и орфографических ошибок
-								</li>
-							</ul>
-						</div>
-						<button class="catalog__button card-yellow">Выбрать</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="popup6" aria-hidden="true" class="popup">
-		<div class="popup__wrapper">
-			<div class="popup__content catalog__content">
-				<button data-close type="button" class="popup__close">&#9747</button>
-				<div class="popup__text">
-					<div class="catalog__card">
-						<div class="catalog__card-top card-orange">Группа продленного дня</div>
-						<div class="catalog__card-price">35 000 тг</div>
-						<div class="catalog__card-content">
-							<div class="catalog__card-info">
-								<div class="catalog__card-text">5 раз в неделю</div>
-								<div class="catalog__card-text">1 смена с 9:00 по 12:00</div>
-								<div class="catalog__card-text">2 смена с 14:00 по 17:00</div>
-							</div>
-							<ul class="catalog__list">
-								<li class="catalog__item">Подготовка к СОР,СОЧ</li>
-								<li class="catalog__item">Проработка пробелов в знаниях</li>
-								<li class="catalog__item">Индивидуальный подход</li>
-								<li class="catalog__item">Выявление сильных сторон ребенка</li>
-								<li class="catalog__item">Профессиональная помощь в подготовке домашних заданий</li>
-								<li class="catalog__item">Дополнительные образовательные дисциплины</li>
-							</ul>
-						</div>
-						<button class="catalog__button card-orange">Выбрать</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-
-	<div id="popupbtn" aria-hidden="true" class="popup">
-		<div class="popup__wrapper">
-			<div class="popup__content application__content">
-				<button data-close type="button" class="popup__close close-popup">&#9747</button>
-				<div class="popup__text">
-					<div class="application__text">Заполните <span>форму</span> и мы обязательно свяжемся с Вами.</div>
-					<form action="">
-						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваше имя..." class="input">
-						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваш телефон..." class="input">
-						<textarea name="" id="" cols="30" rows="10" placeholder="Комментарий..."></textarea>
-						<button data-close type="submit" class="application__button">Отправить</button>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-
-	<!-- <div id="popup7" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content thanks__popup">
-			<button data-close type="button" class="popup__close">&#9747</button>
-			<div class="popup__text">
-				<div class="popup__image">
-					<picture><source srcset="img/final.webp" type="image/webp"><img src="img/final.png" alt=""></picture>
-				</div>
-				<div class="thanks__popup-text"><span>Спасибо</span> за заявку</div>
-				<div class="thanks__popup-text">В ближайшее время мы <span>свяжемся</span>с Вами</div>
-			</div>
-		</div>
-	</div>
-</div> -->
-
-
-	<!-- <div  class="secondpopup">
-	<div class="secondpopup__wrapper">
-		<div class="secondpopup__content">
-			<button data-close type="button" class="popup__close">&#9747</button>
-			<div class="secondpopup__body">
-				<div class="secondpopup__image">
-					<picture><source srcset="img/final.webp" type="image/webp"><img src="img/final.png" alt=""></picture>
-				</div>
-				<div class="secondpopup__text"><span>Спасибо</span> за заявку</div>
-				<div class="secondpopup__text">В ближайшее время мы <span>свяжемся</span>с Вами</div>
-			</div>
-		</div>
-	</div>
-</div> -->
-	<script src="js/app.min.js?_v=20230831153919"></script>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
 </body>
 
 </html>
