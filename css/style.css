@@ -185,6 +185,11 @@ body::after {
   background-color: transparent;
   padding: 5px;
 }
+@media (min-width: 47.99875em) {
+  .popup__close {
+    top: -4%;
+  }
+}
 
 .close-popup {
   right: 0%;
